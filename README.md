@@ -34,6 +34,8 @@ I got back some HTTP stuff and
 
 It worked! It's important to note that the fronted domain needs to have **https://** in the beginning and the target domain should just be the domain. Not exactly sure why, but I had to figure this out the hard way. 
 
+You can also do `curl -s -H "Host: studentfrontingdomaintest.azureedge.net" -H "Connection: close" "https://admin.impulsescreen.com" | grep title` and get the same result. 
+
 
 
 
