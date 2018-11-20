@@ -25,9 +25,14 @@ They're not lying when they say it takes 90 minutes to set up. Mine took a littl
 While this is configuring, go to the settings of your endpoint -> Caching rules and set the caching for the URL to be "bypass string caching behavior". You dont want this to cache your requests.
 
 Once it's finally set up, I used [this](https://github.com/hmm14e/NetworkSecurity/blob/master/FontableAzureEdgeDomains) list to test some of these domains and see if it was fronting. Here is an example that worked. 
+
 `wget -qO - https://admin.impulsescreen.com --header 'Host: studentfrontingdomaintest.azureedge.net' | grep title`
 
+I got back some HTTP stuff and
 
+`<title>We shall tear down the ivory tower and build an obsidian one in its place</title>`
+
+It worked! It's important to note that the fronted domain needs to have **https://** in the beginning and the target domain should just be the domain. Not exactly sure why, but I had to figure this out the hard way. 
 
 
 Credit to [this guy](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html) for helping me set all of this up. 
