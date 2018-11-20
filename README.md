@@ -35,4 +35,24 @@ I got back some HTTP stuff and
 It worked! It's important to note that the fronted domain needs to have **https://** in the beginning and the target domain should just be the domain. Not exactly sure why, but I had to figure this out the hard way. 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Credit to [this guy](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html) for helping me set all of this up. 
