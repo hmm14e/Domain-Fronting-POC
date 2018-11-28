@@ -3,6 +3,7 @@
 First, I signed up for an Azure student account [here](https://azure.microsoft.com/en-us/free/students/). They give you $100 free credit, which is what I used towards setting up my CDN. 
 
 ![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/CDNProfile.png)
+
 Name: this is going to be the sub domain which you’ll use in the Host header, so make it something that looks legit. 
 
 You dont want to use Akami because it doesnt work for domains outside of azure. 
