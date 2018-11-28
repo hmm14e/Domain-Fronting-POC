@@ -5,12 +5,13 @@ First, I signed up for an Azure student account [here](https://azure.microsoft.c
 ![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/CDNProfile.png)
 
 You dont want to use Akami because it doesnt work for domains outside of azure. 
-
-![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/ProfileOverview1.png)
-
 Next, we are going to add an edge server/endpoint which acts as our proxy. 
 
 ![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/CreateEndpoint1.png)
+
+
+![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/ProfileOverview1.png)
+
 
 Name: this is going to be the sub domain which you’ll use in the Host header, so make it something that looks legit. I’ve been using names which imply advertising tracking or normal cdn usage.
 Origin hostname: this is where it’ll forward your traffic.
