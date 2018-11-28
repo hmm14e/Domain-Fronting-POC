@@ -6,11 +6,11 @@ First, I signed up for an Azure student account [here](https://azure.microsoft.c
 
 You dont want to use Akami because it doesnt work for domains outside of azure. 
 
-![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/ProfileOverview.png)
+![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/ProfileOverview1.png)
 
 Next, we are going to add an edge server/endpoint which acts as our proxy. 
 
-![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/CreateEndpoint.png)
+![](https://github.com/hmm14e/NetworkSecurity/blob/master/images/CreateEndpoint1.png)
 
 Name: this is going to be the sub domain which you’ll use in the Host header, so make it something that looks legit. I’ve been using names which imply advertising tracking or normal cdn usage.
 Origin hostname: this is where it’ll forward your traffic.
@@ -26,15 +26,15 @@ While this is configuring, go to the settings of your endpoint -> Caching rules 
 
 Once it's finally set up, I used [this](https://github.com/hmm14e/NetworkSecurity/blob/master/FontableAzureEdgeDomains) list to test some of these domains and see if it was fronting. Here is an example that worked. 
 
-`wget -qO - https://admin.impulsescreen.com --header 'Host: studentfrontingdomaintest.azureedge.net' | grep title`
+`wget -qO - https://admin.impulsescreen.com --header 'Host: studentfrontingdomaintest.azureedge1.net' | grep title`
 
 I got back some HTTP stuff and
 
-`<title>We shall tear down the ivory tower and build an obsidian one in its place</title>`
+`<title>"I feel the need... " - Maverick " ...the need for speed!" - Maverick and Goose</title>`
 
 It worked! It's important to note that the fronted domain needs to have **https://** in the beginning and the target domain should just be the domain. Not exactly sure why, but I had to figure this out the hard way. 
 
-You can also do `curl -s -H "Host: studentfrontingdomaintest.azureedge.net" -H "Connection: close" "https://admin.impulsescreen.com" | grep title` and get the same result. 
+You can also do `curl -s -H "Host: studentfrontingdomaintest1.azureedge.net" -H "Connection: close" "https://admin.impulsescreen.com" | grep title` and get the same result. 
 
 
 
