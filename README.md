@@ -27,7 +27,7 @@ While this is configuring, go to the settings of your endpoint -> Caching rules 
 
 Once it's finally set up, I used [this](https://github.com/hmm14e/NetworkSecurity/blob/master/FontableAzureEdgeDomains) list to test some of these domains and see if it was fronting. Here is an example that worked. 
 
-`wget -qO - https://admin.impulsescreen.com --header 'Host: studentfrontingdomaintest.azureedge1.net' | grep title`
+`wget -qO - https://admin.impulsescreen.com --header 'Host: studentfrontingdomaintest1.azureedge.net' | grep title`
 
 I got back some HTTP stuff and
 
