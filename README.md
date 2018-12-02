@@ -55,7 +55,3 @@ You can also do `curl -s -H "Host: studentfrontingdomaintest1.azureedge.net" -H 
 
 
 
-
-
-
-Credit to [this guy](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html) for helping me set all of this up. 
